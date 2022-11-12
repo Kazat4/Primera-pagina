@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.body{
+    background-color: #e7f4ff;
+}
+
+/* Logo y texto */
+
+.head {
+    background-color:rgb(231, 244, 255) ;
+    display: grid;
+    grid-template-columns: 0.3fr 4fr;
+    grid-template-rows: 100px;
+}
+
+.head .head_logo {
+    display: grid;
+}
+
+.head div h1 {
+    display: grid;  
+}
+
+.head .head_logo img{
+    width: 100%;
+    max-width: 100px;
+    display: grid;  
+}
+
+
+/* Menu de navegacion */
+
+.head .menuNavegacion {
+    font-size: medium;
+    background: linear-gradient(173deg,#ca8939 60%, #e7f4ff )  ;
+    border: 1px solid black;
+    display: grid;
+    margin-top: 60px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+
+}
+
+/* usar la transicion para que cada cajita pase por arriba de la otra */
+
+.head .menuNavegacion a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.head .menuNavegacion a:hover{
+    width: 600px;
+   
+}
+ 
+
+/* Portada */
+
+.imagenesPortada {
+    background-color: #e7f4ff; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: max-content;
+    margin: auto;   
+}
+
+.portada {
+    background-color: rgb(231, 244, 255);
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+
+/* Contenido home */
+.main {
+    background-color: rgb(231, 244, 255);
+    max-width: max-content;
+    height: 250px;
+}
+
+.main .titulo-aracne{
+    font-size: xx-large;
+    color: black;   
+    text-align: center;
+}
+
+.main .contenido-aracne {
+    font-size: large;
+    text-align: center;
+}
+
+/* ¿Quienes somos? */
+
+.estiloQuienesSomos {
+    font-size: xx-large;
+    color: black;   
+    text-align: center;
+}
+
+.contenidoQuienesSomos {
+    font-size: large;
+    text-align: center;
+}
+
+/* Productos  (con repeat se puede armar el catalogo) */
+
+.estiloCatalogo {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.estiloCatalogo h2{
+    display: grid;
+    grid-column: 1/10;
+    /* reducir el tamaño para que se acomode */
+}
+
+.estiloCatalogo img{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ¿Como comprar? */
+
+.comoComprar .estiloComoComprar{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;   
+}
+
+.comoComprar .estiloComoComprar .estiloLinks {
+    text-decoration: none;
+    color: rgb(202, 137, 57);
+}
+
+/* Contacto  */
+
+/* agregar con la funcion focus que se agrande un poco la cajita para rellenar (queda facha) */
+
+.estiloContacto {
+    font-size: xx-large;
+    color: solid black;
+}
+
+.estiloFormulario {
+    font-size: medium;
+    display: inline;
+}
+
+.estiloFormulario .displayBlock {
+    display: block;
+}
+
+/* Footer */
+
+
+
+/* cambiar logos a blanco
+encontrar como pija hacer que quede el footer al fondo */
+.piePagina .logoWp {
+    width: 30px;
+
+}
+
+.piePagina .logo-insta {
+    width: 30px;
+}
+
+.textFooter {
+    width: 100%;
+    text-align: left;
+    color: black;
+}
